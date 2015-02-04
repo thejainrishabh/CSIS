@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> 
+</script>-->
+
+<script src="js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	var numli =$("#tabs li").length;
+	var widthli=$("#tabs li").width();
+	$("#tabs").css("width", numli*widthli +"px");
+});
+</script>
+<style>
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+	background-color: red;
+	background-image: url(img/computer_thumb.jpg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	position: fixed;
+	left:0px;
+	top: 0px;
+	height: 200px;
+	width: 100%;
+}
+#wrapper{
+	width:100%;
+	height: 100%;
+}
+#logo{
+	position :absolute;
+}
+.heading{
+	text-align: center;
+	font-family: Arial;
+	color: white;
+}
+
+#nav-tabs{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: auto;
+}
+#tabs{
+	list-style: none;
+	text-decoration: none;
+	margin: auto;
+}
+#tabs li{
+	background-color: green;
+	float: left;
+	width:100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-family: Arial;/*search font*/
+	/*border curved*/
+	/*hover effect*/
+
+
+	/*formatting of tabs*/
+
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="wrapper">
+			<img id="logo" src=" "><!--Bits pilani,Dept of CSIS-->
+			<h1 id="Bits" class="heading">Bits Pilani</h1>
+			<h2 id="CSIS" class="heading">Department of Computer Science and Information System</h2>
+			<div id="nav-tabs">
+				<ul id="tabs">
+					<a href="#home"><li>Home</li></a>
+					<a href="#1"><li>1</li></a>
+					<a href="#2"><li>2</li></a>
+					<a href="#3"><li>3</li></a>
+					<a href="#4"><li>4</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
